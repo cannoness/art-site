@@ -1,0 +1,26 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "jsx": "react",
+      "baseUrl": ".",
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "sourceMap": true,
+      "target": "ES5",
+      "forceConsistentCasingInFileNames": true,
+      "strictNullChecks": true,
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "esModuleInterop": true,
+  
+      "typeRoots": [],
+      "types": [] //Explicitly specify an empty array so that the TS2 @types modules are not acquired since we aren't ready for them yet.
+    },
+    "exclude": ["node_modules"]
+  }
