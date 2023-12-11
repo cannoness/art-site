@@ -1,0 +1,56 @@
+{
+    // This matches the value configured on the autoformatter
+    "editor.rulers": [80],
+  
+    // An array of language ids which should be validated by ESLint
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+  
+    // When enabled, will trim trailing whitespace when saving a file.
+    "files.trimTrailingWhitespace": true,
+  
+    // typescript auto-format settings
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "javascript.preferences.importModuleSpecifier": "project-relative",
+    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+      "eslint.workingDirectories": [
+        "./src" // replace {PATH_TO_CLIENT} with you own path
+      ],
+    "eslint.probe": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+  ],  
+  "editor.formatOnSave": false,
+  // Runs Prettier, then ESLint
+  "editor.codeActionsOnSave": [
+    "source.formatDocument",
+    "source.fixAll.eslint"
+  ],
+    // make the .shot files from jest-specific-snapshot act like normal snapshots
+    "files.associations": {
+      "*.shot": "jest-snapshot"
+    },
+    "[html]": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": false
+        }
+    },
+    "vsicons.associations.files": [
+      {
+          "icon": "jest_snapshot",
+          "extensions": [
+              ".shot",
+          ],
+          "extends": "jest_snapshot"
+      },
+    ],
+  }
