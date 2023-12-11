@@ -29,7 +29,7 @@
       "typescript",
       "typescriptreact"
   ],  
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   // Runs Prettier, then ESLint
   "editor.codeActionsOnSave": [
     "source.formatDocument",
@@ -41,7 +41,7 @@
     },
     "[html]": {
         "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": false
+          "source.fixAll.eslint": true 
         }
     },
     "vsicons.associations.files": [

@@ -10,6 +10,6 @@ module.exports = {
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "strictNullChecks": false,
-    "noExplicitAny": false,
+    "noExplicitAny": false
   }
 };
