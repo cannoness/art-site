@@ -2,12 +2,22 @@ import React from "react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
+import { ThemeProvider } from "@emotion/react";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
+import { CssBaseline } from "@mui/material";
 const container = document.getElementById("root");
 
 const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ThemeProvider theme="none">
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
 );
 
